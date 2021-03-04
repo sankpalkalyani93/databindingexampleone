@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<p>
+	Student Data Model is available now for registration process.
+</p>
+<br/>
+<button class="btn"
+        [disabled]="!allowNewStudent"
+        (click)="onCreateStudent()">Add Student</button>
+<!--<h3 [innerText]= "allowNewServer"></h3>-->
+<br/>
+<br/>
+{{studentCreationStatus}}
+<br/>
+<br/>
+<input type="text"
+       class="form-control"
+       (input)="OnUpdateStudentName($event)">
+<p>{{studentName}}</p>
+<br/>
+<br/>
